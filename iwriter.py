@@ -13,7 +13,7 @@ class Encryptor:
     def xor_encrypt(self, text: str) -> str:
         # מצפין/מפענח כל תו לפי מפתח ה־XOR
         return "".join(chr(ord(c) ^ self.key) for c in text)
-
+print("udi")
 
 class FileWriter(IWriter):
     def __init__(self, file_path: str, encryptor: Encryptor):
